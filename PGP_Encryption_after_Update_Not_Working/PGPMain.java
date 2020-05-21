@@ -11,9 +11,10 @@ public class PGPMain {
     public static void main(String[] args) throws NoSuchProviderException, IOException, PGPException {
         System.out.println("https://stackoverflow.com/questions/61927913/bouncycastle-update-from-1-46-to-1-56-not-working");
         Security.addProvider(new BouncyCastleProvider()); // get bouncy castle: https://www.bouncycastle.org/latest_releases.html
+        // you need the bcprov-jdk15to18-165.jar and bcpg-jdk15on-165.jar at the time of writing
         System.out.println("\nJava version: " + Runtime.version() + " BouncyCastle Version: " + Security.getProvider("BC"));
         // create a keypair with RSAKeyPairGenerator.java
-        
+
         // encryption
         KeyBasedLargeFileProcessor.encryptFile("enc.txt", "plain.txt", "pub.asc", false, true);
 
