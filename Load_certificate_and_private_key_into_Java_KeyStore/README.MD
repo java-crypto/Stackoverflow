@@ -15,7 +15,7 @@ openssl req -x509 -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem
 This will create the 2 files key.pem (encrypted private key) and cert.pem (certificate with public key). I used some sample data
 and the password for key.pem is 123456.
 
-<b>The key and certificate are sample data !>/b>
+<b>The key and certificate are sample data !</b>
 
 2) download the Keystore Explorer from https://keystore-explorer.org/downloads.html
 
