@@ -4,7 +4,7 @@ https://stackoverflow.com/questions/62701407/load-certificate-and-private-key-in
 Load certificate and private key into Java KeyStore
 
 It sounds to me that the import is a "one time job" and do not need to get solved programmatically.
-I recommend you use the KeystoreExplorer for this job - it worked perfectly in my testcase:
+I recommend (same as @pedrofb) that you use the Keystore Explorer for this job - it worked perfectly in my testcase:
 
 Here are my steps to do the import, all files are available in my GitHub-Repo (https://github.com/java-crypto/Stackoverflow/tree/master/Load_certificate_and_private_key_into_Java_KeyStore):
 
