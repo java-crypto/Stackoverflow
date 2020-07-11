@@ -6,7 +6,7 @@ Load certificate and private key into Java KeyStore
 It sounds to me that the import is a "one time job" and do not need to get solved programmatically.
 I recommend you use the KeystoreExplorer for this job - it worked perfectly in my testcase:
 
-Here are my steps to do the import, all files are available in my GitHub-Repo ():
+Here are my steps to do the import, all files are available in my GitHub-Repo (https://github.com/java-crypto/Stackoverflow/tree/master/Load_certificate_and_private_key_into_Java_KeyStore):
 
 1) create the private key + certificate file with open ssl:
 
@@ -14,6 +14,8 @@ openssl req -x509 -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem
 
 This will create the 2 files key.pem (encrypted private key) and cert.pem (certificate with public key). I used some sample data
 and the password for key.pem is 123456.
+
+<b>The key and certificate are sample data !>/b>
 
 2) download the Keystore Explorer from https://keystore-explorer.org/downloads.html
 
